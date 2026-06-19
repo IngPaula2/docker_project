@@ -24,6 +24,10 @@ jobs:
           java-version: "21"
           cache: maven
 
+      - name: Dar permisos al Maven Wrapper
+        working-directory: test15b
+        run: chmod +x ./mvnw
+
       - name: Compilar backend con Maven
         working-directory: test15b
         run: ./mvnw clean package -DskipTests
