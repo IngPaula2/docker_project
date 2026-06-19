@@ -20,12 +20,7 @@ public class testController {
 	
 	@GetMapping(value="/saludar")
 	public String hello() {
-		return "Hola estudiantes de la 15B - Docker Compose y CI funcionando";
-	}
-
-	@GetMapping(value="/estado")
-	public String estado() {
-		return "Backend Spring Boot activo";
+		return "Hola estudiantes de la 15B";
 	}
 	
 	@GetMapping(value="/sumar")

@@ -1,7 +1,0 @@
-.metadata/
-**/.metadata/
-target/
-**/target/
-.idea/
-.vscode/
-*.log

@@ -12,10 +12,6 @@
     <button onclick="saludar()">Probar /saludar</button>
     <p id="resultadoSaludo"></p>
 
-    <h2>Estado del backend</h2>
-    <button onclick="estado()">Probar /estado</button>
-    <p id="resultadoEstado"></p>
-
     <h2>Sumar dos números</h2>
     <input type="number" id="numero1" placeholder="Número 1">
     <input type="number" id="numero2" placeholder="Número 2">
@@ -37,18 +33,6 @@
                 })
                 .catch(error => {
                     document.getElementById("resultadoSaludo").innerText = "Error al consumir /saludar";
-                    console.error(error);
-                });
-        }
-
-        function estado() {
-            fetch(`${API_URL}/estado`)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("resultadoEstado").innerText = data;
-                })
-                .catch(error => {
-                    document.getElementById("resultadoEstado").innerText = "Error al consumir /estado";
                     console.error(error);
                 });
         }
